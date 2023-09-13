@@ -4,14 +4,14 @@ sales <- read_excel("data/Assignment-Historical Sales.xlsx") %>%
   janitor::clean_names() %>% 
   rename(states = state_s )
 
-sales %>% 
+sales_data %>% 
   glimpse()
 
 
-sales %>% summarize(n=n_distinct(customer_code))
+sales_data %>% summarize(n=n_distinct(customer_code))
 
 #distribution of revenue by year
-sales_year <- sales %>% 
+sales_year <- sales_data %>% 
   mutate(
     sum_sales= sum(total_amt),
     sum_vol = sum(quantity)
