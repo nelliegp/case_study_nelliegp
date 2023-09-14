@@ -9,7 +9,7 @@ date: "2023-09-14"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-The purpose of this repo is to edit data-sources inorder to import into the Tableau to generate the analyical views. 
+The purpose of this repo is to edit data-sources inorder to import into the Tableau to generate the analytical views. 
 
 ## How to use this repo:
 

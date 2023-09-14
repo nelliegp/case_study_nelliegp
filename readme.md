@@ -2,10 +2,8 @@ README
 ================
 2023-09-14
 
-# README
-
 The purpose of this repo is to edit data-sources inorder to import into
-the Tableau to generate the analyical views.
+the Tableau to generate the analytical views.
 
 ## How to use this repo:
 
