@@ -1,6 +1,5 @@
-# data load: The goal of this document is to stack the datasources to generate 1 datasource. Currently, there is not method to stack this easily in tableau. 
+# data load: The goal of this document is to stack the data sources to generate 1 data source. Currently, there is not method to stack this easily in tableau. 
 # this is possible, but the goal here is efficiency leveraging currently skills i already have.
-
 
 source('budget_script.R')
 #edit budget data to combine with all time sales data 
@@ -19,11 +18,6 @@ budget_final <- budget_edited %>%
   )
 
 ################### pull in data #######################
-# wghts <- read_excel("data/Assignment-CaseWeights.xlsx") %>%  
-#   janitor::clean_names() %>% 
-#   rename(
-#     item_code = item_no
-#   )
 
 sales_data <- read_excel("data/Assignment-Historical Sales.xlsx") %>%  
   janitor::clean_names() %>% 

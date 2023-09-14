@@ -39,9 +39,7 @@ budget_edited <- budget_cases_final %>%
     budget_price_final %>% select(-c(customer_code:item_group, month))
   ) 
 
-write_csv2(budget_edited, 'data/budget_data.csv')
 
-save_data <- FALSE
 if(save_data ==TRUE){
   budget_edited %>% 
     mutate(
