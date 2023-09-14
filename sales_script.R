@@ -7,7 +7,6 @@ sales <- read_excel("data/Assignment-Historical Sales.xlsx") %>%
 sales_data %>% 
   glimpse()
 
-
 sales_data %>% summarize(n=n_distinct(customer_code))
 
 #distribution of revenue by year

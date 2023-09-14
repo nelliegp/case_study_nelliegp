@@ -40,22 +40,7 @@ budget_edited <- budget_cases_final %>%
   ) 
 
 write_csv2(budget_edited, 'data/budget_data.csv')
-# budget_edited <- budget_cases_final %>% 
-#   bind_cols(
-#     budget_price_final %>% select(-c(customer_code:item_group, month))
-#   )  %>% 
-#   rename(
-#     total_amt = budget_prices,
-#     case_vol=volume,
-#     month_date = month,
-#     business_line=business
-#   ) %>% 
-#   mutate(
-#     month = stringr::str_remove(format(month_date, '%m'),'0'),
-#     month=as.numeric(month),
-#     year= lubridate::floor_date(month_date, 'year'),
-#     data_source = 'forecast'
-#   ) 
+
 save_data <- FALSE
 if(save_data ==TRUE){
   budget_edited %>% 
