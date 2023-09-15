@@ -9,16 +9,24 @@ the Tableau to generate the analytical views.
 
 How to use this repo:
 
-1.  Run `config.R`
-2.  Export data:
+1.  Upload the following excel files to the data/ folder:
+
+- `Assignment-CaseWeights.xlsx`
+- `Assignment-Historical Sales.xlsx`
+- `Assignment-Budget.xlsx`
+
+2.  Run `install.R`
+3.  Run `config.R`
+4.  Export data: This is used in the tableau
 
 - `data_combined.csv`
 - `budget_data.csv`
 
 # Contents
 
-- `config.R`: Sets parameters and calls relevant R scripts
+- `config.R`: Sets parameters and calls relevant R scripts to transform
+  data
 - `data/`: houses data
 - `budget_script.R`: edits Assignment-Budget data, generates
-  ‘budget_edited.csv’
+  `budget_edited.csv`
 - `data_pull.R`: generates `combined_data.csv`
